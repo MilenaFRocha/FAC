@@ -1,0 +1,119 @@
+.data 
+	
+	soma: .asciz "ADD: "
+	subtrai: .asciz "\nSUB: "
+	e: .asciz "\nAND: "
+	ou: .asciz "\nOR: "
+	ouExclusivo: .asciz "\nXOR: "
+	mask: .asciz "\nMASK: "
+	deslocamentoEsquerda: "\nSLL("
+	deslocamentoDireita: .asciz "\nSRL("
+	parenteses: .asciz "): "
+	quebraLinha: .asciz "\n"
+	
+
+.text
+
+li a7, 5
+ecall  #faco leitura 
+
+mv t0, a0 #leitura de a que está em t0
+
+ecall # faco leitura de b
+
+mv t1, a0 #leitura de b que está em t1
+
+ecall #leitura de c
+
+mv t2, a0 # leitura de c em s1
+
+
+li a7 , 4 # printar a string de add
+la a0, soma #ele printa o que ta em a0 entao movo soma para a0
+ecall 
+
+
+
+li a7, 1
+add a0, t0, t1 #soma de  a + b em t2
+ecall
+
+li a7 , 4 # printar a string de add
+la a0, subtrai #ele printa o que ta em a0 entao movo soma para a0
+ecall 
+
+sub a0, t0, t1
+li a7,1
+ecall
+
+li a7, 4 
+la a0, e
+ecall
+
+ 
+and a0,t0,t1
+li a7, 1
+ecall
+
+li a7,4
+la a0, ou
+ecall
+
+or,a0,t0,t1
+li a7,1
+ecall
+
+li a7, 4
+la a0, ouExclusivo
+ecall
+
+xor a0,t0,t1
+li a7,1
+ecall
+
+li a7,4
+la a0, mask
+ecall
+
+andi a0,t2,31
+mv s4 ,a0
+li a7,1
+ecall
+
+li a7,4
+la a0,deslocamentoEsquerda
+ecall
+
+li a7,1
+mv a0,s4
+ecall
+
+li a7,4
+la a0, parenteses
+ecall
+
+sll a0,t0,t2
+li a7,1
+ecall
+li a7,4
+la a0,deslocamentoDireita
+ecall
+
+mv a0,s4
+li a7,1
+ecall
+
+li a7,4
+la a0, parenteses
+ecall
+
+srl a0,t1,t2
+li a7,1
+ecall
+li a7, 4
+la a0, quebraLinha
+ecall 
+ 
+li a7, 10
+ecall
+ 
