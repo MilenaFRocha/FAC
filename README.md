@@ -15,6 +15,8 @@ Repositório destinado ao estudo de Fundamentos e Arquitetura de Computadores
    4. [Movimentação de dados](#Movimentaçãodedados)
    5. [Controle de fluxo condicional](#Controledefluxocondicional)
    6. [Controle de fluxo incondicional](#Controledefluxoincondicional)
+6. [Prova 2](#Prova)
+  
 
 
 
@@ -125,5 +127,44 @@ Repositório destinado ao estudo de Fundamentos e Arquitetura de Computadores
 
 **8. Comparação de valores**
 - slt
+
+### 5.Prova 2
+- Conversão de números de ponto flutuante para binário (se prepare para números grandes, ele não tem dó)
+  - Exemplo: Converter o número 45.25 para binário (IEEE 754 de 32 bits)
+
+   Parte inteira:
+   
+   45 em binário é 101101.
+   Parte fracionária:
+   
+   0.25 em binário é 0.01 (0.25 * 2 = 0.5 -> 0, 0.5 * 2 = 1.0 -> 1).
+   Juntar as partes:
+   
+   45.25 em binário é 101101.01.
+   IEEE 754:
+   
+   Normalizamos: 1.0110101 x 2^5.
+   Sinal: 0 (positivo).
+   Expoente: 5 + 127 = 132 (em binário: 10000100).
+   Mantissa: 01101010000000000000000.
+   Resultado: 01000010001101010000000000000000.
+- Saber diferenciar o que é CISC de RISC
+  - CISC (Complex Instruction Set Computer):
+
+   Conjunto de instruções mais complexo.
+   Cada instrução pode executar várias operações.
+   Exemplo: Intel x86.
+   - RISC (Reduced Instruction Set Computer):
+   
+   Conjunto de instruções mais simples e reduzido.
+   Cada instrução geralmente executa uma única operação.
+   Exemplo: ARM, RISC-V
+- Desenvolver em Assembly Risc V (Treine fazer loops como for, while, do while) (Treine também fazer if, else, else if)
+- Analisar código em Assembly (Entender os comandos, como o código é executado, saber como funciona chamada de funções em assembly, e também comandos de operações lógicas como sll e srl)
+- Saber resolver problemas em assembly (Treine problemas do beecrowd em assembly, principalmente com que mecha com operações matématicas como divisão, raiz quadrada, etc...)
+- Estudar sobre os tipos de microarquiteturas e suas diferenças (uniciclo, multiciclo e pipeline)
+- Estudar sobre partes da arquitetura de um computador, como barramentos e as suas características
+- Estudar sobre cache, e como funciona
+- Estudar sobre como funciona a memória, memória virtual, mapeamento de memória, paginação
   
 
