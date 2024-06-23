@@ -6,7 +6,7 @@ Repositório destinado ao estudo de Fundamentos e Arquitetura de Computadores
 ## Sumário
 
 
-1. [Conceitos importantes](#1-conceitos-importantes)
+1. [Conceitos importantes](#1conceitos-importantes)
 2. [Introdução](#2-introdução)
 3. [RISC-V](#3-risc-v)
 4. [Instruções](#4-instruções)
