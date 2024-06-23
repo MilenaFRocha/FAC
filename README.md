@@ -5,17 +5,18 @@ Repositório destinado ao estudo de Fundamentos e Arquitetura de Computadores
 
 ## Sumário
 
-1. [Conceitos importantes](#1.Conceitosimportantes)
-2. [Introdução](#2.Introdução)
-3. [RISC-V](#RISC-V)
-4. [Instruções](#4.Instruções)
-   1. [Operações lógicas](#Operações-lógicas)
-   2. [Deslocamento de bit (shift bit )](#Deslocamentodebit (shift bit ))
-   3. [Aritméticas](#Aritméticas)
-   4. [Movimentação de dados](#Movimentaçãodedados)
-   5. [Controle de fluxo condicional](#Controledefluxocondicional)
-   6. [Controle de fluxo incondicional](#Controledefluxoincondicional)
-6. [Prova 2](#Prova)
+
+1. [Conceitos importantes](#1-conceitos-importantes)
+2. [Introdução](#2-introdução)
+3. [RISC-V](#3-risc-v)
+4. [Instruções](#4-instruções)
+   1. [Operações lógicas](#41-operações-lógicas)
+   2. [Deslocamento de bit (shift bit)](#42-deslocamento-de-bit-shift-bit)
+   3. [Aritméticas](#43-aritméticas)
+   4. [Movimentação de dados](#44-movimentação-de-dados)
+   5. [Controle de fluxo condicional](#45-controle-de-fluxo-condicional)
+   6. [Controle de fluxo incondicional](#46-controle-de-fluxo-incondicional)
+6. [Prova 2](#6-prova-2)
   
 
 
