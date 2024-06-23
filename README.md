@@ -6,7 +6,7 @@ Repositório destinado ao estudo de Fundamentos e Arquitetura de Computadores
 ## Sumário
 
 1. [Conceitos importantes](#1.Conceitosimportantes)
-2. [Introdução](#introdução)
+2. [Introdução](#2.Introdução)
 3. [RISC-V](#RISC-V)
 4. [Instruções](#4.Instruções)
    1. [Operações lógicas](#Operações-lógicas)
@@ -129,42 +129,62 @@ Repositório destinado ao estudo de Fundamentos e Arquitetura de Computadores
 - slt
 
 ### 5.Prova 2
-- Conversão de números de ponto flutuante para binário (se prepare para números grandes, ele não tem dó)
-  - Exemplo: Converter o número 45.25 para binário (IEEE 754 de 32 bits)
+# Checklist de Estudo para Prova de Fundamentos e Arquiteturas
 
-   Parte inteira:
-   
-   45 em binário é 101101.
-   Parte fracionária:
-   
-   0.25 em binário é 0.01 (0.25 * 2 = 0.5 -> 0, 0.5 * 2 = 1.0 -> 1).
-   Juntar as partes:
-   
-   45.25 em binário é 101101.01.
-   IEEE 754:
-   
-   Normalizamos: 1.0110101 x 2^5.
-   Sinal: 0 (positivo).
-   Expoente: 5 + 127 = 132 (em binário: 10000100).
-   Mantissa: 01101010000000000000000.
-   Resultado: 01000010001101010000000000000000.
-- Saber diferenciar o que é CISC de RISC
-  - CISC (Complex Instruction Set Computer):
+## Conversão de Números de Ponto Flutuante para Binário
+- [x] Entender a conversão de números inteiros para binário
+- [x] Entender a conversão de números fracionários para binário
+- [x] Compreender a normalização de números binários
+- [x] Aprender a formatar números em ponto flutuante segundo o padrão IEEE 754
+- [x] Praticar com números grandes e pequenos
 
-   Conjunto de instruções mais complexo.
-   Cada instrução pode executar várias operações.
-   Exemplo: Intel x86.
-   - RISC (Reduced Instruction Set Computer):
-   
-   Conjunto de instruções mais simples e reduzido.
-   Cada instrução geralmente executa uma única operação.
-   Exemplo: ARM, RISC-V
-- Desenvolver em Assembly Risc V (Treine fazer loops como for, while, do while) (Treine também fazer if, else, else if)
-- Analisar código em Assembly (Entender os comandos, como o código é executado, saber como funciona chamada de funções em assembly, e também comandos de operações lógicas como sll e srl)
-- Saber resolver problemas em assembly (Treine problemas do beecrowd em assembly, principalmente com que mecha com operações matématicas como divisão, raiz quadrada, etc...)
-- Estudar sobre os tipos de microarquiteturas e suas diferenças (uniciclo, multiciclo e pipeline)
-- Estudar sobre partes da arquitetura de um computador, como barramentos e as suas características
-- Estudar sobre cache, e como funciona
-- Estudar sobre como funciona a memória, memória virtual, mapeamento de memória, paginação
-  
+## Diferenciação entre CISC e RISC
+- [x] Estudar as características do CISC
+- [x] Estudar as características do RISC
+- [x] Comparar vantagens e desvantagens de CISC e RISC
+- [x] Examinar exemplos de arquiteturas CISC e RISC
+
+## Desenvolvimento em Assembly RISC-V
+- [x] Praticar escrever loops `for` em Assembly RISC-V
+- [x] Praticar escrever loops `while` em Assembly RISC-V
+- [x] Praticar escrever loops `do while` em Assembly RISC-V
+- [x] Praticar escrever estruturas condicionais `if`, `else if`, `else` em Assembly RISC-V
+
+## Análise de Código em Assembly
+- [x] Entender os comandos básicos de Assembly RISC-V
+- [x] Estudar como o código Assembly é executado
+- [x] Aprender sobre a chamada de funções em Assembly
+- [x] Entender operações lógicas como `sll` (shift left logical) e `srl` (shift right logical)
+- [x] Praticar a análise de códigos de exemplo
+
+## Resolução de Problemas em Assembly
+- [x] Resolver problemas de divisão em Assembly
+- [x] Resolver problemas de raiz quadrada em Assembly
+- [x] Resolver problemas matemáticos no beecrowd usando Assembly
+- [x] Praticar resolução de problemas diversos que envolvam operações matemáticas
+
+## Tipos de Microarquiteturas
+- [x] Estudar a microarquitetura de ciclo único
+- [x] Estudar a microarquitetura de múltiplos ciclos
+- [x] Estudar a microarquitetura pipeline
+- [x] Comparar as diferenças entre ciclo único, múltiplos ciclos e pipeline
+
+## Partes da Arquitetura de um Computador
+- [ ] Estudar sobre os barramentos de dados, endereços e controle
+- [ ] Entender as características dos diferentes tipos de barramentos
+- [ ] Aprender como os barramentos interagem com outros componentes do computador
+
+## Cache
+- [ ] Estudar o funcionamento da cache de dados
+- [ ] Estudar o funcionamento da cache de instruções
+- [ ] Compreender os princípios de localidade temporal e espacial
+- [ ] Aprender sobre políticas de substituição de cache
+
+## Memória
+- [x] Estudar o funcionamento da memória principal
+- [x] Entender o conceito de memória virtual
+- [x] Estudar o mapeamento de memória
+- [x] Compreender o processo de paginação
+- [ ] Aprender sobre tabelas de páginas e TLB (Translation Lookaside Buffer)
+
 
