@@ -16,7 +16,7 @@ Repositório destinado ao estudo de Fundamentos e Arquitetura de Computadores
    4. [Movimentação de dados](#44-movimentação-de-dados)
    5. [Controle de fluxo condicional](#45-controle-de-fluxo-condicional)
    6. [Controle de fluxo incondicional](#46-controle-de-fluxo-incondicional)
-6. [Prova 2](#6prova2)
+6. [Prova 2](#6prova-2)
   
 
 
